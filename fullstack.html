@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Stack Web Development Course</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f3f6fb; color: #333; }
+
+    header {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.6rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover { transform: translateY(-8px); }
+
+    .course-card h2 {
+      color: #203a43;
+      margin-bottom: 10px;
+    }
+
+    .course-card p { margin-bottom: 12px; }
+
+    .course-card ul { margin: 15px 0; }
+    .course-card ul li {
+      list-style: none;
+      margin-bottom: 8px;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .course-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #2c5364;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin: 18px 0 8px;
+      color: #1a7f37;
+    }
+
+    .duration {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #203a43;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover { background: #0f2027; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1b1b1b;
+      color: #ccc;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Full Stack Web Development Course</h1>
+    <p>Learn Frontend + Backend + Database with Real-World Projects</p>
+  </header>
+
+  <div class="container">
+    <div class="courses">
+
+      <!-- Frontend -->
+      <div class="course-card">
+        <h2>Frontend Development</h2>
+        <p>Build modern and responsive user interfaces</p>
+        <ul>
+          <li>HTML5, CSS3, Bootstrap</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React.js Basics</li>
+          <li>Responsive Design</li>
+        </ul>
+        <div class="price">₹5,999</div>
+        <div class="duration">Duration: 2 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Backend -->
+      <div class="course-card">
+        <h2>Backend Development</h2>
+        <p>Server-side programming & APIs</p>
+        <ul>
+          <li>PHP / Node.js</li>
+          <li>Laravel / Express</li>
+          <li>Authentication & Security</li>
+          <li>REST APIs</li>
+        </ul>
+        <div class="price">₹6,999</div>
+        <div class="duration">Duration: 2.5 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Database -->
+      <div class="course-card">
+        <h2>Database & Deployment</h2>
+        <p>Store data and deploy applications</p>
+        <ul>
+          <li>MySQL / MongoDB</li>
+          <li>Database Design</li>
+          <li>Hosting & Deployment</li>
+          <li>Git & GitHub</li>
+        </ul>
+        <div class="price">₹4,999</div>
+        <div class="duration">Duration: 1.5 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Full Stack Combo -->
+      <div class="course-card">
+        <h2>Complete Full Stack Program</h2>
+        <p>Best choice for job-ready skills</p>
+        <ul>
+          <li>Frontend + Backend + Database</li>
+          <li>Live Projects</li>
+          <li>Interview Preparation</li>
+          <li>Certificate Included</li>
+        </ul>
+        <div class="price">₹14,999</div>
+        <div class="duration">Duration: 6 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 TechMasala Computer Classes. Made with ❤️ in Shahapur. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

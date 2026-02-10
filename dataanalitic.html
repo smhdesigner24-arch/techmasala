@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analytics & BI Course</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f4f7fb; color: #333; }
+
+    header {
+      background: linear-gradient(120deg, #1d4350, #a43931);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.6rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover { transform: translateY(-8px); }
+
+    .course-card h2 {
+      color: #1d4350;
+      margin-bottom: 10px;
+    }
+
+    .course-card p { margin-bottom: 12px; }
+
+    .course-card ul { margin: 15px 0; }
+    .course-card ul li {
+      list-style: none;
+      margin-bottom: 8px;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .course-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #a43931;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin: 18px 0 8px;
+      color: #1a7f37;
+    }
+
+    .duration {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #1d4350;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover { background: #0f2a33; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1b1b1b;
+      color: #ccc;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Data Analytics & Business Intelligence Course</h1>
+    <p>Master data analysis, visualization, and business decision-making</p>
+  </header>
+
+  <div class="container">
+    <div class="courses">
+
+      <!-- Data Analytics -->
+      <div class="course-card">
+        <h2>Data Analytics</h2>
+        <p>Analyze and interpret data effectively</p>
+        <ul>
+          <li>Excel & Advanced Excel</li>
+          <li>SQL for Data Analysis</li>
+          <li>Python for Analytics</li>
+          <li>Statistics & EDA</li>
+        </ul>
+        <div class="price">₹7,999</div>
+        <div class="duration">Duration: 3 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Business Intelligence -->
+      <div class="course-card">
+        <h2>Business Intelligence (BI)</h2>
+        <p>Visualize data and create dashboards</p>
+        <ul>
+          <li>Power BI</li>
+          <li>Tableau</li>
+          <li>Dashboard Design</li>
+          <li>Business Reporting</li>
+        </ul>
+        <div class="price">₹6,999</div>
+        <div class="duration">Duration: 2.5 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Combo Course -->
+      <div class="course-card">
+        <h2>Complete Data Analytics + BI Program</h2>
+        <p>Job-ready data professional program</p>
+        <ul>
+          <li>Data Analytics + BI Tools</li>
+          <li>Live Projects</li>
+          <li>Case Studies</li>
+          <li>Certificate Included</li>
+        </ul>
+        <div class="price">₹12,999</div>
+        <div class="duration">Duration: 5.5 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 TechMasala Computer Classes. Made with ❤️ in Shahapur. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+

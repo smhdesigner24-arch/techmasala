@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python & DSA Courses</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f4f7fb; color: #333; }
+
+    header {
+      background: linear-gradient(120deg, #2b5876, #4e4376);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover { transform: translateY(-8px); }
+
+    .course-card h2 {
+      color: #2b5876;
+      margin-bottom: 10px;
+    }
+
+    .course-card ul { margin: 15px 0; }
+    .course-card ul li {
+      list-style: none;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .course-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #4e4376;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #1d7a46;
+    }
+
+    .duration {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #2b5876;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover { background: #1f4056; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Python & DSA Learning Programs</h1>
+    <p>Learn Python programming and Data Structures & Algorithms with structured courses</p>
+  </header>
+
+  <div class="container">
+    <div class="courses">
+
+      <!-- Python Course -->
+      <div class="course-card">
+        <h2>Python Programming</h2>
+        <p>Beginner to Advanced</p>
+        <ul>
+          <li>Python Basics & Syntax</li>
+          <li>OOP in Python</li>
+          <li>File Handling</li>
+          <li>Projects & Practice</li>
+        </ul>
+        <div class="price">₹4,999</div>
+        <div class="duration">Duration: 2 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- DSA Course -->
+      <div class="course-card">
+        <h2>Data Structures & Algorithms</h2>
+        <p>Core DSA with Problem Solving</p>
+        <ul>
+          <li>Arrays, Strings, Linked List</li>
+          <li>Stack, Queue, Recursion</li>
+          <li>Trees & Graphs</li>
+          <li>Sorting & Searching</li>
+        </ul>
+        <div class="price">₹6,999</div>
+        <div class="duration">Duration: 3 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+      <!-- Combo Course -->
+      <div class="course-card">
+        <h2>Python + DSA Combo</h2>
+        <p>Best Value Package</p>
+        <ul>
+          <li>Complete Python Course</li>
+          <li>Complete DSA Coverage</li>
+          <li>Interview Preparation</li>
+          <li>Certificate Included</li>
+        </ul>
+        <div class="price">₹9,999</div>
+        <div class="duration">Duration: 5 Months</div>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 TechMasala Computer Classes. Made with ❤️ in Shahapur. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
